@@ -16,6 +16,10 @@
 *.dylib
 *.dll
 
+# priducts
+*.vst3
+*.components
+
 # Fortran module files
 *.mod
 *.smod

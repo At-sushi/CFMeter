@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="bnh3ed" name="CFMeter" projectType="audioplug" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginVST3Category="Analyzer"
+              cppLanguageStandard="latest">
+  <MAINGROUP id="bQKsE7" name="CFMeter">
+    <GROUP id="{2B5D1539-0E73-D901-99FF-D1A65682DB95}" name="ff_meters-master">
+      <GROUP id="{F65A57B5-8151-67C6-C502-22F2A369B353}" name="LevelMeter">
+        <FILE id="VRtwIU" name="LevelMeter.cpp" compile="1" resource="0" file="Source/ff_meters-master/LevelMeter/LevelMeter.cpp"/>
+        <FILE id="VMFrmx" name="LevelMeter.h" compile="0" resource="0" file="Source/ff_meters-master/LevelMeter/LevelMeter.h"/>
+        <FILE id="j7B0Nm" name="LevelMeterSource.h" compile="0" resource="0"
+              file="Source/ff_meters-master/LevelMeter/LevelMeterSource.h"/>
+      </GROUP>
+      <GROUP id="{7B6E85AE-CF6F-D98E-8C62-562427D6839E}" name="LookAndFeel">
+        <FILE id="HZVyO1" name="LevelMeterLookAndFeel.h" compile="0" resource="0"
+              file="Source/ff_meters-master/LookAndFeel/LevelMeterLookAndFeel.h"/>
+        <FILE id="rktoE6" name="LevelMeterLookAndFeelMethods.h" compile="0"
+              resource="0" file="Source/ff_meters-master/LookAndFeel/LevelMeterLookAndFeelMethods.h"/>
+        <FILE id="b5qicf" name="SoundFieldLookAndFeelMethods.h" compile="0"
+              resource="0" file="Source/ff_meters-master/LookAndFeel/SoundFieldLookAndFeelMethods.h"/>
+      </GROUP>
+      <GROUP id="{E686441F-86F8-74FF-2579-35AAE81EB938}" name="Visualisers">
+        <FILE id="vVX6Y1" name="OutlineBuffer.h" compile="0" resource="0" file="Source/ff_meters-master/Visualisers/OutlineBuffer.h"/>
+        <FILE id="SN0eeh" name="StereoFieldBuffer.h" compile="0" resource="0"
+              file="Source/ff_meters-master/Visualisers/StereoFieldBuffer.h"/>
+        <FILE id="As2ziM" name="StereoFieldComponent.h" compile="0" resource="0"
+              file="Source/ff_meters-master/Visualisers/StereoFieldComponent.h"/>
+      </GROUP>
+      <FILE id="BDvj1K" name="Doxyfile" compile="0" resource="1" file="Source/ff_meters-master/Doxyfile"/>
+      <FILE id="yyOLSZ" name="ff_meters.cpp" compile="1" resource="0" file="Source/ff_meters-master/ff_meters.cpp"/>
+      <FILE id="nD5Zbq" name="ff_meters.h" compile="0" resource="0" file="Source/ff_meters-master/ff_meters.h"/>
+      <FILE id="bi6iAW" name="LICENSE.md" compile="0" resource="1" file="Source/ff_meters-master/LICENSE.md"/>
+      <FILE id="SRi4Ch" name="README.md" compile="0" resource="1" file="Source/ff_meters-master/README.md"/>
+    </GROUP>
+    <GROUP id="{18801990-8F11-F102-25F1-37A2FC41DA10}" name="Source">
+      <FILE id="PcpuWi" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="y4LftK" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="Jmu0bb" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="gSofg9" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="CFMeter"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CFMeter"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2019 targetFolder="Builds/VisualStudio2019">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="CFMeter"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CFMeter"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2019>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="CFMeter"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="CFMeter"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
